@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+    gap: 24px;
+    background-color: black;
+    color: white;
+    padding: 8px 24px;
+}
+
+.menu li{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding: 4px 8px;
+    transition: 3s;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background-color: blue;
+}
+
+.menu img {
+    height: 46px;
+}
