@@ -52,7 +52,7 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding: 40px;
+    padding: 120px;
     background-color: white;
 }
 
@@ -113,31 +113,23 @@ a {
 /*----------------------------------------------------------------------------*/
 
 /* Estilização das Estrelas */
-/* 
-.rating {
+.avaliacao {
+    font-size: 1.2em;
+    color: gold;
+    margin: 8px 0;
+}
+
+.meia-estrela {
+    position: relative;
     display: inline-block;
-  }
-  
-  .rating input {
-    display: none;
-  }
-  
-  .rating label {
-    float: right;
-    cursor: pointer;
-    color: #ccc;
-    transition: color 0.3s;
-  }
-  
-  .rating label:before {
-    content: '\2605';
-    font-size: 30px;
-  }
-  
-  .rating input:checked ~ label,
-  .rating label:hover,
-  .rating label:hover ~ label {
-    color: rgb(255, 162, 0);
-    transition: color 0.3s;
-  }
-   */
+    overflow: hidden;
+    width: 0.5em;
+}
+
+.meia-estrela::before {
+    content: '⭐';
+    position: absolute;
+    left: 0;
+    width: 1em;
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}
