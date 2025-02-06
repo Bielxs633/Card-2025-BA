@@ -1,3 +1,7 @@
+:root {
+    --cor-hover: white;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -27,12 +31,12 @@ a {
     gap: 4px;
     align-items: center;
     padding: 4px 8px;
-    transition: 3s;
+    transition: .5s;
     cursor: pointer;
 }
 
 .menu li:hover {
-    background-color: blue;
+    background-color: var(--cor-hover);
 }
 
 .menu img {
