@@ -20,7 +20,7 @@ a {
 /* Menu de navegação */
 .menu {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     gap: 24px;
     background-color: black;
     color: white;
@@ -31,7 +31,7 @@ a {
     display: flex;
     gap: 4px;
     align-items: center;
-    padding: 4px 8px;
+    padding: 4px 50px;
     transition: .5s;
     cursor: pointer;
 }
@@ -45,8 +45,8 @@ a {
 }
 
 /*----------------------------------------------------------------------------*/
-
 /* Estilização dos Cards */
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -111,8 +111,8 @@ a {
 }
 
 /*----------------------------------------------------------------------------*/
-
 /* Estilização das Estrelas */
+
 .avaliacao {
     font-size: 1.2em;
     color: gold;
